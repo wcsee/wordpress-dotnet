@@ -1,6 +1,6 @@
 # WordPress.NET - System Architecture Design (Draft)
 
-## Key Architectural Highlights:
+## 📋 Key Architectural Highlights:
 
 ### 1. **Multi-Tenant Support**
 - Database-per-tenant isolation with shared infrastructure
@@ -32,7 +32,7 @@
 - Frontend/backend separation with hybrid deployment options
 - Comprehensive API documentation and versioning
 
-## Implementation Strategy:
+## 📋 Implementation Strategy:
 
 1. **Phase 1**: Core infrastructure (Domain, Application layers, basic API)
 2. **Phase 2**: Multi-tenant system and database setup
