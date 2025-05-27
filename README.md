@@ -1,5 +1,51 @@
 # WordPress.NET - System Architecture Design (Draft)
 
+## Key Architectural Highlights:
+
+### 1. **Multi-Tenant Support**
+- Database-per-tenant isolation with shared infrastructure
+- Flexible tenant resolution (domain/subdomain/path-based)
+- Tenant-specific configurations and themes
+
+### 2. **Modular & Plugin Architecture**
+- Dynamic plugin loading and discovery
+- Event-driven plugin communication
+- Extensible API framework for plugins
+
+### 3. **Theme System**
+- Razor-based template engine with React component support
+- Asset management per theme
+- Theme inheritance and customization layers
+
+### 4. **Clean Architecture Implementation**
+- Clear separation of Domain, Application, Infrastructure, and Presentation layers
+- CQRS pattern with MediatR for scalable operations
+- Dependency injection throughout all layers
+
+### 5. **Database Flexibility**
+- EF Core with support for PostgreSQL, MySQL, SQL Server
+- Migration-based schema management
+- Multi-tenant database strategies
+
+### 6. **API-First Design**
+- RESTful APIs with optional GraphQL support
+- Frontend/backend separation with hybrid deployment options
+- Comprehensive API documentation and versioning
+
+## Implementation Strategy:
+
+1. **Phase 1**: Core infrastructure (Domain, Application layers, basic API)
+2. **Phase 2**: Multi-tenant system and database setup
+3. **Phase 3**: Plugin architecture and basic plugins
+4. **Phase 4**: Theme system and React frontend
+5. **Phase 5**: Advanced features (caching, monitoring, scaling)
+
+The architecture is designed to be:
+- **Scalable**: Horizontal scaling support with load balancing
+- **Maintainable**: Clean separation of concerns and modular design
+- **Extensible**: Plugin and theme systems for easy customization
+- **Secure**: Comprehensive security measures
+
 ## 📋 Overall Architecture Overview
 
 ```
@@ -283,8 +329,8 @@ UserMeta (Id, UserId, MetaKey, MetaValue)
 ## 🚀 Technology Stack
 
 ### Backend Technology Stack
-- **Framework**: ASP.NET Core 8.0
-- **ORM**: Entity Framework Core 8.0
+- **Framework**: ASP.NET Core 9.x
+- **ORM**: Entity Framework Core 9.x
 - **Database**: PostgreSQL/MySQL/SQL Server
 - **Caching**: Redis + MemoryCache
 - **Authentication**: JWT + Identity
@@ -295,8 +341,8 @@ UserMeta (Id, UserId, MetaKey, MetaValue)
 - **Testing**: xUnit + Moq
 
 ### Frontend Technology Stack
-- **Framework**: React 18 + TypeScript
-- **Routing**: React Router v6
+- **Framework**: React 19 + TypeScript
+- **Routing**: React Router v7
 - **State Management**: Redux Toolkit / Zustand
 - **UI Library**: Ant Design / Material-UI
 - **Build Tools**: Vite / Next.js
