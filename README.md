@@ -66,7 +66,7 @@ The architecture is designed to be:
 ┌─────────────────────────────────────────────────────────────────┐
 │                    Application Layer                            │
 ├─────────────────────┬─────────────────────┬─────────────────────┤
-│   Content Service   │   User Service      │   Plugin Manager    │
+│   Content Service   │   User Service      │   Plugin Service    │
 │   Theme Service     │   Media Service     │   Cache Service     │
 └─────────────────────┴─────────────────────┴─────────────────────┘
                                │
