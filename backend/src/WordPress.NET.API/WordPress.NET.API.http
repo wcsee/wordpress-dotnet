@@ -1,0 +1,6 @@
+@WordPress.NET.API_HostAddress = http://localhost:5158
+
+GET {{WordPress.NET.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
